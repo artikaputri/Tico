@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Shopping Cart</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+   <link href="../ecommerce-shopping-cart-master/style.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="../fontawesome/css baru/stylehome.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/LOGO1.png" alt="" width="130" height="130" class="me-2">
+          Ti & Co <strong>Beauty</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Cari barang anda" aria-label="Cari">
+            <button class="btn btn-secondary" type="submit">Cari</button>
+          </form>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="homepage.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Kontak.html">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Keranjang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Daftar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Indeks.html">Masuk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--Nav bar-->
+   <section>
+      <div class="container">
+         <h2 class="px-5 p-2">Keranjang</h2>
+         <div class="cart">
+            <div class="col-md-12 col-lg-10 mx-auto">
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="../ecommerce-shopping-cart-master/images/Produk_lipstik.1.jpg" alt="">
+                        <h5>Maybellin Vinly Ink</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="Lipcream-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="Lipcream-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button id="Lipcream-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5>Rp.  <span id="Lipcream-total">132000</span> </h5>
+                        <img src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item mx-auto">
+                        <img src="../ecommerce-shopping-cart-master/images/Produk_Maskara.1.jpg" alt="">
+                        <h5>Maybellin Vinly Ink</h5>
+                     </div>
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="Maskara-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="Maskara-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button  id="Maskara-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                        </div>
+                        <h5>Rp.  <span id="Maskara-total">103000</span> </h5>
+                        <img src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row g-2">
+
+                     <div class="col-6">
+                        <h5>Subtotal: </h5>
+                        <h5>Tax:</h5>
+                        <h5>Total:</h5>
+                     </div>
+
+                     <div class="col-6 status">
+                        <h5>$<span id="sub-total">1,278</span></h5>
+                        <h5>$<span id="tax-amount">0</span></h5>
+                        <h5>$<span id="total-price">1,278</span></h5>
+                     </div>
+                     
+                  </div>
+               </div>
+               <div class="col-md-12 pt-4 pb-4">
+                  <button type="button" class="btn btn-success check-out">Check Out</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script src="../ecommerce-shopping-cart-master/app.js"></script>
+</body>
+</html>
